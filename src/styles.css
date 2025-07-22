@@ -1,0 +1,275 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  /* Navigation styles */
+  nav {
+    background-color: #007bff;
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-brand:hover {
+    opacity: 0.8;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    opacity: 0.8;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    background-color: #007bff;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Progress tracking section styles */
+  .progress-tracking {
+    background-color: #28a745;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .progress-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .progress-tracking h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .progress-tracking p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Multimedia content section styles */
+  .multimedia-content {
+    background-color: #ffc107;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .multimedia-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .course-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .course-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .course-card h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+  .course-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 10px;
+    }
+  
+    .hero h1 {
+      font-size: 3rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    .progress-tracking h2 {
+      font-size: 2rem;
+    }
+  
+    .progress-tracking p {
+      font-size: 1rem;
+    }
+  
+    .course-card {
+      width: calc(50% - 40px);
+    }
+  
+    .navbar-brand {
+      margin-left: 10px;
+      font-size: 1.2rem;
+    }
+  
+    .nav-link {
+      font-size: 1rem;
+    }
+  }
+  
+  .navbar {
+    /* text-decoration-color: #007bff; */
+    background-color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    color:#007bff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    opacity: 0.8;
+  }
+  
