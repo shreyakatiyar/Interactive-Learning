@@ -3,7 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive Learning Platform - Comprehensive courses and interactive content">
+  <meta name="theme-color" content="#080810">
   <title>Interactive Learning Platform</title>
+
+  <!-- Prevent flash of wrong theme -->
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('il-theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch(e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+
+  <!-- Premium Fonts: Outfit (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="root"></div>
