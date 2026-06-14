@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { DataContext } from '../DataContext';
-import { Container, Typography, Button, Box, Grid, Card, CardContent, LinearProgress } from '@mui/material';
+import { Container, Typography, Button, Grid, Card, CardContent, LinearProgress } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';

@@ -4,7 +4,7 @@ export const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
   // State for courses
-  const [courses, setCourses] = useState([
+  const [courses] = useState([
     {
       id: 1,
       title: 'Introduction to React',
@@ -149,7 +149,7 @@ export const DataProvider = ({ children }) => {
   ]);
 
   // State for community posts (continued)
-const [communityPosts, setCommunityPosts] = useState([
+const [communityPosts] = useState([
     {
       id: 1,
       user: 'John Doe',
@@ -188,7 +188,7 @@ const [communityPosts, setCommunityPosts] = useState([
   ]);
   
   // State for live sessions
-  const [liveSessions, setLiveSessions] = useState([
+  const [liveSessions] = useState([
     {
       id: 1,
       image:'https://i.ytimg.com/vi/i5ier3ldD_8/hqdefault.jpg?v=62a84408',
@@ -232,7 +232,7 @@ const [communityPosts, setCommunityPosts] = useState([
   ]);
   
   // State for progress tracking
-  const [progress, setProgress] = useState([
+  const [progress] = useState([
     {
       id: 1,
       user: 'John Doe',
@@ -275,7 +275,7 @@ const [communityPosts, setCommunityPosts] = useState([
   ]);
   
   // State for quiz questions
-  const [quizQuestions, setQuizQuestions] = useState([
+  const [quizQuestions] = useState([
     {
       id: 1,
       question: 'What is React?',
